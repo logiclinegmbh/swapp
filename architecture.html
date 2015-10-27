@@ -55,51 +55,24 @@ Project</a></li>
 <div class="container">
 <div class="row">
 <div class="col-xs-12">
-<h1>Setup</h1>
-<h3>Deploying to Heroku using the Heroku Button</h3>
+<h1>Architecture</h1>
+<h3>Overview of the functionalities of Swapp</h3>
 <hr>
-<p> You can deploy your own version of Swapp using deploy on heroku button using the button bellow:</p>
-<p><a href="https://heroku.com/deploy?template=https://github.com/logiclinegmbh/swapp"><img src="https://www.herokucdn.com/deploy/button.png"; alt="Deploy"></a></p>
-<br>
-
-<h3>Deploying to Heroku using the command line</h3>
-<hr>
-<p>You can also deploy Swapp on heroku using command line with the steps bellow:</p>
+<p>These are the basic functionalities:</p>
 
 <ol>
-<li><p>Heroku login (using your Heroku credentials: Email and Password)</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ heroku login</code></pre></div></li>
-<li><p>Clone the repository on GitHub</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ git clone https://github.com/logiclinegmbh/swapp
-</code></pre></div></li>
-<li><p>Create a Heroku application</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ cd swapp
-$ heroku create</code></pre></div></li>
-<li><p>Install the Heroku Postgress Add-on</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ heroku addons: add heroku-postgresql:hobby-dev
-</code></pre></div></li>
-<li><p>Deploy to Heroku</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ git push heroku master
-</code></pre></div></li>
-<li><p>Run the the application:</p>
+<li><p>Start page</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><img width="100%" src="images/architecture/Start_1.jpg"/></code></pre></div></li>
+<li><p>Add a person to the Postgress database</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><img width="100%" src="images/architecture/Simple_1.jpg"/></code></pre></div></li>
+<li><p>View on people page - one person</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><img width="100%" src="images/architecture/Simple_2.jpg"/></code></pre></div></li>
+<li><p>View on peaople page - second person</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"><img width="100%" src="images/architecture/Simple_3.jpg"/></code></pre></div></li>
+<li><p>Heroku database view</p>
+    <div class="highlight"><pre><code class="language-text" data-lang="text"><img width="100%" src="images/architecture/Heroku_1.jpg"/></code></pre></div></li></ol>
 
-<ul>
-<li><p>Open the application in a browser:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ heroku open
-</code></pre></div></li></ul></li>
-
-<li><p>And then you can see your application running in your browser.
-For further reading you can also take a look at <a href="https://devcenter.heroku.com/categories/java">heroku devcenter</a>.</p></li></ol>
-
-<br>
-<hr>
-<div>
-<h3>Setup Heroku - Step 1</h3>
-<img src="images/setup/Deploy_1.jpg"/>
-<h3>Setup Heroku - Step 2</h3>
-<img src="images/setup/Deploy_2.jpg"/>
 </div>
-    
     
 <div class="row" style="padding-top: 4px;">
 </div>
