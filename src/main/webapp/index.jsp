@@ -46,7 +46,7 @@
 				<div class="span8 offset2">
 
 					<div style="margin-bottom: 20px">
-						This is a template for a web application that uses Spring MVC and
+						This is a template provided by logicline for a web application that uses Spring MVC and
 						Hibernate (including some small jsp pages). <a href="people/" target="_self">people page</a>.
 					</div>
 
