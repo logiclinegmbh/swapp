@@ -1,9 +1,9 @@
-package com.example.service;
+package de.logicline.swapp.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.example.model.Person;
+import de.logicline.swapp.model.Person;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -11,6 +11,19 @@ import javax.persistence.criteria.CriteriaQuery;
 
 import java.util.List;
 
+/**
+ * 
+ * Spring Bean Implementation of the {@link PersonService}
+ * Gets the Hibernate EntityManager injected to do the ORM magic.
+ * You might consider to create an DAO (Data Access Object) Layer in order 
+ * to separate business logic (usually located in the Service Components) from 
+ * persistence logic.
+ * 
+ * (The M in MVC)
+ * 
+ * @author logicline
+ *
+ */
 @Service
 public class PersonServiceImpl implements PersonService {
 
@@ -22,7 +35,6 @@ public class PersonServiceImpl implements PersonService {
         em.persist(person);
     }
 
-    @Transactional
     public List<Person> listPeople() {
         CriteriaQuery<Person> c = em.getCriteriaBuilder().createQuery(Person.class);
         c.from(Person.class);

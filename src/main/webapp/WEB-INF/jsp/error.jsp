@@ -1,5 +1,7 @@
 <%@ include file="/WEB-INF/jsp/_jspheader.jsp"%>
 <!doctype html>
+<%@ page isErrorPage="true" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <html>
 <head>
@@ -37,7 +39,7 @@
 	<div id="MainContainer">
 		<!-- Start: Header -->
 		<header>
-			<%@ include file="/WEB-INF/jsp/_header.jsp"%>
+			<%@ include file="_header.jsp"%>
 		</header>
 		<!-- End: Header -->
 		
@@ -45,20 +47,20 @@
 			<div class="row">
 				<div class="span8 offset2">
 
-					<div style="margin-bottom: 20px">
-						This is a template for a web application that uses Spring MVC and
-						Hibernate (including some small jsp pages). <a href="people/" target="_self">people page</a>.
+					<div style="margin-top: 20px">
+						<h2>Ooops, an unexpected Error occoured!</h2>
+						Status Code:   <c:out value="${requestScope['javax.servlet.error.status_code']}"/><p>
+						Message:       <c:out value="${requestScope['javax.servlet.error.message']}"/><p>
 					</div>
 
 					<div class="tab-content"></div>
-
 				</div>
 			</div>
 		</div>
 		
 		<!-- Start: Footer -->
 		<footer>
-			<%@ include file="/WEB-INF/jsp/_footer.jsp"%>
+			<%@ include file="_footer.jsp"%>
 		</footer>
 		<!-- End: Footer -->
 	</div>

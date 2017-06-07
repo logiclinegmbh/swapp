@@ -1,6 +1,6 @@
 {
   "name": "swapp",
-  "description": "Swapp is a template that provides a basic functionality and dynamic integration with Postgress database",
+  "description": "Swapp is a template that provides a basic functionality and dynamic integration with Postgres database",
   "repository": "https://github.com/logiclinegmbh/swapp",
   "logo": "http://www.logicline.de/wordpress/wp-content/uploads/2015/01/logicline_logo_400.png",
   "website": "https://github.com/logiclinegmbh/swapp",
