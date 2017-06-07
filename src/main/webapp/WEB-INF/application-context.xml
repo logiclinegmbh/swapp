@@ -55,14 +55,12 @@
 			</property>
 		</bean>
 
-		<bean id="dataSource"
+	<bean id="dataSource"
 			class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 			<property name="driverClassName" value="org.postgresql.Driver" />
-			<property name="url" value="jdbc:postgresql://localhost:5432/myDatabase" />
-			<!-- <property name="url" value="jdbc:postgresql://localhost:5432/myDatabase?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory" 
-				/> -->
-			<property name="username" value="postgres" />
-			<property name="password" value="admin" />
+			<property name="url" value="jdbc:postgresql://ec2-79-125-118-221.eu-west-1.compute.amazonaws.com/d2okjthnar3sk1?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory" />
+			<property name="username" value="ppzjxyfhwlxewl" />
+			<property name="password" value="61e5f6d3e676baf41654876041e56287a4ccd3b6b75af21db8318a05d3bfaac4" />
 		</bean>
 
 	</beans>

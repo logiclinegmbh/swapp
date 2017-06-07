@@ -47,10 +47,11 @@
 
 					<div style="margin-bottom: 20px">
 						This is a template for a web application that uses Spring MVC and
-						Hibernate. <a href="people/" target="_self">people page</a>.
+						Hibernate (including some small jsp pages). <a href="people/" target="_self">people page</a>.
 					</div>
 
 					<div class="tab-content"></div>
+
 				</div>
 			</div>
 		</div>
